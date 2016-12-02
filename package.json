@@ -6,7 +6,7 @@
     "start": "node app.js",
     "clear": "npm cache clear"
   },
-  "author": "Daniel Milholland <https://www.milhound.com> (Daniel@gailwindslog.com)",
+  "author": "Daniel Milholland <https://www.milhound.com> (Daniel@gailwindslog.com), Estrobeda <estrobeda@gmail.com>",
   "description": "Hound Bot for Discordapp, created using Discord.js.",
   "keywords": [
     "Discord",
@@ -17,7 +17,8 @@
   ],
   "license": "LGPL-3.0",
   "dependencies": {
-    "discord.js": "^10.0.0",
+    "discord.js": "^10.0.1",
+    "node-opus": "^0.2.4",
     "ytdl-core": "^0.7.19"
   }
 }

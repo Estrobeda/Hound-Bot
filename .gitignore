@@ -6,3 +6,6 @@ Test/
 user.json
 data/user.json
 data/backup.json
+
+data/guilds.json
+data/guilds.1.json

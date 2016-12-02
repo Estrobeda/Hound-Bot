@@ -91,11 +91,11 @@ module.exports = {
 
 function initiateSave () {
   setInterval(() => {
-    fs.writeFile('../data/user.json', JSON.stringify(Usr), (err) => {
+    fs.writeFile('./data/user.json', JSON.stringify(Usr), (err) => {
       if (err) console.log(err)
       console.log('Saved User.json')
     })
-  }, 300000)
+  }, 30000)
 }
 function getUsers (msg) {
   const users = Usr[msg.guild.id].users
@@ -152,8 +152,11 @@ function applyPerks (msg, exp) {
 }
 function addUser (msg) {
   if (!Usr.hasOwnProperty(msg.guild.id)) {
+   
     Usr[msg.guild.id] = {}
+
     Usr[msg.guild.id].users = {}
+
   }
   Usr[msg.guild.id].users[msg.author.id] = {}
   Usr[msg.guild.id].users[msg.author.id].username = msg.author.username
